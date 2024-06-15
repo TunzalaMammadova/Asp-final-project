@@ -43,33 +43,29 @@ namespace Asp_project.Areas.Admin.Controllers
         {
             if (!ModelState.IsValid) return View();
 
-            foreach (var item in request.Images)
-            {
-                if (!item.CheckFileType("image/"))
+                if (!request.Image.CheckFileType("image/"))
                 {
                     ModelState.AddModelError("Images", "File must be only image format");
                     return View();
                 }
 
-                if (!item.CheckFileSize(200))
+                if (!request.Image.CheckFileSize(800))
                 {
-                    ModelState.AddModelError("Images", "Image size must be max 200kb");
+                    ModelState.AddModelError("Images", "Image size must be max 800kb");
                 }
-            }
-
-            foreach (var item in request.Images)
-            {
-                string fileName = Guid.NewGuid().ToString() + "-" + item.FileName;
+            
+                string fileName = Guid.NewGuid().ToString() + "-" + request.Image.FileName;
 
                 string path = Path.Combine(_env.WebRootPath, "img", fileName);
+
                 ViewBag.fileName = path;
 
-                await item.SavFileToLocalAsync(path);
+                await request.Image.SaveFileToLocalAsync(path);
 
-                await _context.Sliders.AddAsync(new Slider { Image = fileName });
+                await _context.Sliders.AddAsync(new Slider { Image = fileName , Title = request.Title});
 
                 await _context.SaveChangesAsync();
-            }
+            
 
             return RedirectToAction("Index");
         }
@@ -85,7 +81,7 @@ namespace Asp_project.Areas.Admin.Controllers
 
             if (slider is null) return NotFound();
 
-            string path = Path.Combine(_env.WebRootPath, "img", slider.Image);
+            string path = Path.Combine(_env.WebRootPath, "img", slider.Image, slider.Title);
 
             path.DeleteFileFromToLocal();
 
@@ -121,7 +117,7 @@ namespace Asp_project.Areas.Admin.Controllers
 
             if (slider is null) return NotFound();
 
-            if (request.NewImage is null) return RedirectToAction(nameof(Index));
+            if (request.NewImage is not null) return RedirectToAction(nameof(Index));
 
             if (request.NewImage.CheckFileType("image/"))
             {
@@ -129,9 +125,9 @@ namespace Asp_project.Areas.Admin.Controllers
                 return View(request);
             }
 
-            if (request.NewImage.CheckFileSize(200))
+            if (request.NewImage.CheckFileSize(800))
             {
-                ModelState.AddModelError("NewImage", "Image size must be max 200kb");
+                ModelState.AddModelError("NewImage", "Image size must be max 800kb");
                 request.Image = slider.Image;
                 return View(request);
             }
@@ -144,14 +140,17 @@ namespace Asp_project.Areas.Admin.Controllers
 
             string newPath = Path.Combine(_env.WebRootPath, "img", fileName);
 
-            request.NewImage.SavFileToLocalAsync(newPath);
+            await request.NewImage.SaveFileToLocalAsync(newPath);
 
             slider.Image = fileName;
 
+            var datas = new SliderEditVM { Title = slider.Title , Image = slider.Image};
+
             await _context.SaveChangesAsync();
 
-            return View(new SliderEditVM { Image = slider.Image, Title = slider.Title });
+            return View(datas);
         }
+
 
         [HttpGet]
         public async Task<IActionResult> Detail(int? id)

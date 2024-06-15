@@ -1,38 +1,38 @@
 ﻿<Properties StartupConfiguration="{13A18282-C8E9-4A90-9F35-B7A67D9E5B10}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.Asp-project PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Asp-project/Areas/Admin/Controllers/SliderController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Asp-project/Areas/Admin/Controllers/SliderInfoController.cs">
     <Files>
-      <File FileName="Asp-project/Areas/Admin/Controllers/SliderController.cs" Line="128" Column="56" />
-      <File FileName="Asp-project/Areas/Admin/Views/Slider/Index.cshtml" Line="24" Column="30" />
-      <File FileName="Asp-project/Areas/Admin/Views/Slider/Edit.cshtml" Line="15" Column="13" />
-      <File FileName="Asp-project/Areas/Admin/Views/Slider/Create.cshtml" Line="9" Column="9" />
-      <File FileName="Asp-project/Areas/Admin/Views/Slider/Detail.cshtml" Line="7" Column="53" />
-      <File FileName="Asp-project/ViewModels/Sliders/SliderVM.cs" Line="1" Column="1" />
+      <File FileName="Asp-project/Areas/Admin/Views/SliderInfo/Detail.cshtml" Line="8" Column="15" IsPinned="True" />
+      <File FileName="Asp-project/ViewModels/SliderInfos/SliderInfoVM.cs" Line="8" Column="34" />
+      <File FileName="Asp-project/Areas/Admin/Views/SliderInfo/Create.cshtml" Line="8" Column="33" />
+      <File FileName="Asp-project/Models/SliderInfo.cs" Line="1" Column="1" />
+      <File FileName="Asp-project/Areas/Admin/Views/SliderInfo/Edit.cshtml" Line="18" Column="70" />
+      <File FileName="Asp-project/Areas/Admin/Views/SliderInfo/Index.cshtml" Line="17" Column="17" />
+      <File FileName="Asp-project/Areas/Admin/Controllers/SliderInfoController.cs" Line="56" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Asp-project" expanded="True">
             <Node name="Asp-project">
-              <Node name="Areas" expanded="True">
-                <Node name="Admin" expanded="True">
+              <Node name="Areas">
+                <Node name="Admin">
                   <Node name="Controllers" expanded="True">
-                    <Node name="SliderController.cs" selected="True" />
+                    <Node name="SliderInfoController.cs" selected="True" />
                   </Node>
-                  <Node name="Views" expanded="True">
-                    <Node name="Slider" expanded="True" />
+                  <Node name="Views">
+                    <Node name="SliderInfo" expanded="True" />
                   </Node>
                 </Node>
               </Node>
-              <Node name="Data" expanded="True" />
-              <Node name="Helpers" expanded="True">
-                <Node name="Extensions" expanded="True" />
-              </Node>
-              <Node name="ViewModels" expanded="True">
-                <Node name="Sliders" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="ViewModels">
+                <Node name="SliderInfos" expanded="True" />
               </Node>
               <Node name="Views" expanded="True">
                 <Node name="Shared" expanded="True">
@@ -42,13 +42,14 @@
                   </Node>
                 </Node>
               </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

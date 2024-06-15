@@ -3465,6 +3465,34 @@
       "PackagePath": "staticwebassets/css/style.css"
     },
     {
+      "Id": "/Users/tunzale/Desktop/Asp-project/Asp-project/wwwroot/img/048e9add-e16f-46f2-a057-d7fb9865e15f-favicon.png",
+      "PackagePath": "staticwebassets/img/048e9add-e16f-46f2-a057-d7fb9865e15f-favicon.png"
+    },
+    {
+      "Id": "/Users/tunzale/Desktop/Asp-project/Asp-project/wwwroot/img/18eb7b53-e97c-45d7-af57-48644fb238aa-favicon.png",
+      "PackagePath": "staticwebassets/img/18eb7b53-e97c-45d7-af57-48644fb238aa-favicon.png"
+    },
+    {
+      "Id": "/Users/tunzale/Desktop/Asp-project/Asp-project/wwwroot/img/25e18d58-ca05-4c3a-aedc-50a4c99724d9-favicon.png",
+      "PackagePath": "staticwebassets/img/25e18d58-ca05-4c3a-aedc-50a4c99724d9-favicon.png"
+    },
+    {
+      "Id": "/Users/tunzale/Desktop/Asp-project/Asp-project/wwwroot/img/5ed6d1fb-2404-4d99-8506-1e3b5b31778c-favicon.png",
+      "PackagePath": "staticwebassets/img/5ed6d1fb-2404-4d99-8506-1e3b5b31778c-favicon.png"
+    },
+    {
+      "Id": "/Users/tunzale/Desktop/Asp-project/Asp-project/wwwroot/img/63d5ff51-7644-4c35-9d42-be6b8cb9d866-favicon.png",
+      "PackagePath": "staticwebassets/img/63d5ff51-7644-4c35-9d42-be6b8cb9d866-favicon.png"
+    },
+    {
+      "Id": "/Users/tunzale/Desktop/Asp-project/Asp-project/wwwroot/img/7eb329c6-c43f-4a9d-955d-eecf3d625b23-favicon.png",
+      "PackagePath": "staticwebassets/img/7eb329c6-c43f-4a9d-955d-eecf3d625b23-favicon.png"
+    },
+    {
+      "Id": "/Users/tunzale/Desktop/Asp-project/Asp-project/wwwroot/img/a82a593d-8962-4d3e-b47b-d7a743323680-favicon.png",
+      "PackagePath": "staticwebassets/img/a82a593d-8962-4d3e-b47b-d7a743323680-favicon.png"
+    },
+    {
       "Id": "/Users/tunzale/Desktop/Asp-project/Asp-project/wwwroot/img/avatar.jpg",
       "PackagePath": "staticwebassets/img/avatar.jpg"
     },

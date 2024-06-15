@@ -13,7 +13,7 @@ namespace Asp_project.Helpers.Extensions
             return file.ContentType.Contains(pattern);
         }
 
-        public async static Task SavFileToLocalAsync(this IFormFile file, string path)
+        public async static Task SaveFileToLocalAsync(this IFormFile file, string path)
         {
             using (FileStream stream = new FileStream(path, FileMode.Create))
             {

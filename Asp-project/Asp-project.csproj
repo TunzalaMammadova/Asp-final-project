@@ -35,6 +35,8 @@
     <None Remove="Helpers\" />
     <None Remove="Helpers\Extensions\" />
     <None Remove="Areas\Admin\Views\Slider\" />
+    <None Remove="Areas\Admin\Views\SliderInfo\" />
+    <None Remove="ViewModels\SliderInfos\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\" />
@@ -72,6 +74,8 @@
     <Folder Include="Helpers\" />
     <Folder Include="Helpers\Extensions\" />
     <Folder Include="Areas\Admin\Views\Slider\" />
+    <Folder Include="Areas\Admin\Views\SliderInfo\" />
+    <Folder Include="ViewModels\SliderInfos\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.31" />
