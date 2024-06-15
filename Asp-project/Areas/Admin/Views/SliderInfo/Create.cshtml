@@ -6,13 +6,13 @@
     <h1>@ViewBag.filename</h1>
     <form class="form-sample" method="post" asp-action="Create" enctype="multipart/form-data">
         <div class="form-group">
-            <input asp-for="Image" class="form-control" />
-            <span class="text-danger" asp-validation-for="Image"></span>
+            <input asp-for="Background" class="form-control" />
+            <span class="text-danger" asp-validation-for="Background"></span>
 
-            <input asp-for="Title" type="text" class="form-control" maxlength="50" />
+            <input asp-for="Title" type="text" class="form-control" maxlength="50" placeholder="Title"/>
             <span class="text-danger" asp-validation-for="Title"></span>
 
-            <input asp-for="Description" type="text" class="form-control" maxlength="50" />
+            <input asp-for="Description" type="text" class="form-control" maxlength="50" placeholder="Description" />
             <span class="text-danger" asp-validation-for="Description"></span>
         </div>
         <button type="submit" class="btn btn-primary mr-2">Submit</button>

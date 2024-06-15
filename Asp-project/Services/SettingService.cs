@@ -25,7 +25,6 @@ namespace Asp_project.Services
         {
             return await _context.Settings.Where(m => m.Id == id).FirstOrDefaultAsync();
         }
-
     }
 }
 

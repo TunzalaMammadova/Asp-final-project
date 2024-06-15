@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7y6UQjqguc8h0nHAgsVnkr5BWRqtQzMqtOE7cT6OV7Y=",
+  "Hash": "jiJwOQ89HBeIQvlPn2VBZpCt4+VIEjHZ1KtCoABau6U=",
   "Source": "Asp-project",
   "BasePath": "_content/Asp-project",
   "Mode": "Default",
@@ -14839,6 +14839,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/7eb329c6-c43f-4a9d-955d-eecf3d625b23-favicon.png"
+    },
+    {
+      "Identity": "/Users/tunzale/Desktop/Asp-project/Asp-project/wwwroot/img/834d5e15-8bea-4209-a0a4-e743a88c7f8a-favicon.png",
+      "SourceId": "Asp-project",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/tunzale/Desktop/Asp-project/Asp-project/wwwroot/",
+      "BasePath": "_content/Asp-project",
+      "RelativePath": "img/834d5e15-8bea-4209-a0a4-e743a88c7f8a-favicon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/834d5e15-8bea-4209-a0a4-e743a88c7f8a-favicon.png"
     },
     {
       "Identity": "/Users/tunzale/Desktop/Asp-project/Asp-project/wwwroot/img/a82a593d-8962-4d3e-b47b-d7a743323680-favicon.png",

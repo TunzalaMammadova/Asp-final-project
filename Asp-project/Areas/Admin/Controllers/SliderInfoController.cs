@@ -43,24 +43,24 @@ namespace Asp_project.Areas.Admin.Controllers
         {
             if (!ModelState.IsValid) return View();
 
-            if (!request.Image.CheckFileType("image/"))
+            if (!request.Background.CheckFileType("image/"))
             {
                 ModelState.AddModelError("Images", "File must be only image format");
                 return View();
             }
 
-            if (!request.Image.CheckFileSize(800))
+            if (!request.Background.CheckFileSize(800))
             {
                 ModelState.AddModelError("Images", "Image size must be max 800kb");
             }
 
-            string fileName = Guid.NewGuid().ToString() + "-" + request.Image.FileName;
+            string fileName = Guid.NewGuid().ToString() + "-" + request.Background.FileName;
 
             string path = Path.Combine(_env.WebRootPath, "img", fileName);
 
             ViewBag.fileName = path;
 
-            await request.Image.SaveFileToLocalAsync(path);
+            await request.Background.SaveFileToLocalAsync(path);
 
             await _context.SliderInfos.AddAsync(new SliderInfo { Background = fileName, Title = request.Title , Description = request.Description });
 
