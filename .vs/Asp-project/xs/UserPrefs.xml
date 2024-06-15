@@ -1,20 +1,44 @@
 ﻿<Properties StartupConfiguration="{13A18282-C8E9-4A90-9F35-B7A67D9E5B10}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Asp-project/Areas/Admin/Controllers/SettingController.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Asp-project PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Asp-project/Areas/Admin/Controllers/SliderController.cs">
     <Files>
-      <File FileName="Asp-project/Controllers/CartController.cs" Line="49" Column="20" />
-      <File FileName="Asp-project/Services/Interfaces/ICartService.cs" Line="9" Column="1" />
-      <File FileName="Asp-project/Services/CartService.cs" Line="25" Column="1" />
-      <File FileName="Asp-project/Areas/Admin/Controllers/SettingController.cs" Line="12" Column="1" />
+      <File FileName="Asp-project/Areas/Admin/Controllers/SliderController.cs" Line="128" Column="56" />
+      <File FileName="Asp-project/Areas/Admin/Views/Slider/Index.cshtml" Line="24" Column="30" />
+      <File FileName="Asp-project/Areas/Admin/Views/Slider/Edit.cshtml" Line="15" Column="13" />
+      <File FileName="Asp-project/Areas/Admin/Views/Slider/Create.cshtml" Line="9" Column="9" />
+      <File FileName="Asp-project/Areas/Admin/Views/Slider/Detail.cshtml" Line="7" Column="53" />
+      <File FileName="Asp-project/ViewModels/Sliders/SliderVM.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Asp-project" expanded="True">
-            <Node name="Asp-project" expanded="True">
+            <Node name="Asp-project">
               <Node name="Areas" expanded="True">
                 <Node name="Admin" expanded="True">
                   <Node name="Controllers" expanded="True">
-                    <Node name="SettingController.cs" selected="True" />
+                    <Node name="SliderController.cs" selected="True" />
+                  </Node>
+                  <Node name="Views" expanded="True">
+                    <Node name="Slider" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Helpers" expanded="True">
+                <Node name="Extensions" expanded="True" />
+              </Node>
+              <Node name="ViewModels" expanded="True">
+                <Node name="Sliders" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Shared" expanded="True">
+                  <Node name="Components" expanded="True">
+                    <Node name="Header" expanded="True" />
+                    <Node name="Slider" expanded="True" />
                   </Node>
                 </Node>
               </Node>
@@ -24,10 +48,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Asp-project PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

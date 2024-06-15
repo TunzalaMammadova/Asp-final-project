@@ -28,6 +28,13 @@
     <None Remove="Views\Shared\Components\" />
     <None Remove="Views\Shared\Components\Header\" />
     <None Remove="Views\Cart\" />
+    <None Remove="ViewModels\Settings\" />
+    <None Remove="Areas\Admin\Views\Setting\" />
+    <None Remove="Views\Shared\Components\Slider\" />
+    <None Remove="ViewModels\Sliders\" />
+    <None Remove="Helpers\" />
+    <None Remove="Helpers\Extensions\" />
+    <None Remove="Areas\Admin\Views\Slider\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\" />
@@ -58,6 +65,13 @@
     <Folder Include="Views\Shared\Components\" />
     <Folder Include="Views\Shared\Components\Header\" />
     <Folder Include="Views\Cart\" />
+    <Folder Include="ViewModels\Settings\" />
+    <Folder Include="Areas\Admin\Views\Setting\" />
+    <Folder Include="Views\Shared\Components\Slider\" />
+    <Folder Include="ViewModels\Sliders\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Helpers\Extensions\" />
+    <Folder Include="Areas\Admin\Views\Slider\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.31" />

@@ -10,6 +10,8 @@ namespace Asp_project.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<Setting> Settings { get; set; }
+        public DbSet<Slider> Sliders { get; set; }
+        public DbSet<SliderInfo> SliderInfos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -17,5 +19,4 @@ namespace Asp_project.Data
         }
 
     }
-
 }
