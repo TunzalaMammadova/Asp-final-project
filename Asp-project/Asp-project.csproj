@@ -39,6 +39,8 @@
     <None Remove="ViewModels\SliderInfos\" />
     <None Remove="ViewModels\Adventages\" />
     <None Remove="Areas\Admin\Views\Adventage\" />
+    <None Remove="ViewModels\Sales\" />
+    <None Remove="Areas\Admin\Views\Sale\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\" />
@@ -80,6 +82,8 @@
     <Folder Include="ViewModels\SliderInfos\" />
     <Folder Include="ViewModels\Adventages\" />
     <Folder Include="Areas\Admin\Views\Adventage\" />
+    <Folder Include="ViewModels\Sales\" />
+    <Folder Include="Areas\Admin\Views\Sale\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.31" />

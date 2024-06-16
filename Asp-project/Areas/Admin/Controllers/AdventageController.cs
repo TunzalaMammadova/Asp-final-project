@@ -18,6 +18,8 @@ namespace Asp_project.Areas.Admin.Controllers
             _adventageService = adventageService;
         }
 
+
+
         [HttpGet]
         public async Task<IActionResult> Index()
         {
@@ -25,11 +27,14 @@ namespace Asp_project.Areas.Admin.Controllers
             return View(datas);
         }
 
+
+
         [HttpGet]
         public IActionResult Create()
         {
             return View();
         }
+
 
 
         [HttpPost]
@@ -61,6 +66,7 @@ namespace Asp_project.Areas.Admin.Controllers
         }
 
 
+
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
@@ -72,6 +78,7 @@ namespace Asp_project.Areas.Admin.Controllers
 
             return View(new AdventageEditVM { Icon = adventage.Icon, Title = adventage.Title, Desc = adventage.Desc });
         }
+
 
 
         [HttpPost]

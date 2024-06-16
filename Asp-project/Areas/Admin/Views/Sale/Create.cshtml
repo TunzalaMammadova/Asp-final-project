@@ -1,0 +1,21 @@
+﻿@namespace Asp_project.ViewModels.Sales
+
+@model SaleCreateVM
+
+<div class="container mt-5">
+    <h1>@ViewBag.filename</h1>
+    <form class="form-sample" method="post" asp-action="Create" enctype="multipart/form-data">
+        <div class="form-group">
+            <input asp-for="Image" class="form-control" />
+            <span class="text-danger" asp-validation-for="Image"></span>
+
+            <input asp-for="Title" type="text" class="form-control" maxlength="50" />
+            <span class="text-danger" asp-validation-for="Title"></span>
+
+            <input asp-for="Description" type="text" class="form-control" maxlength="50" />
+            <span class="text-danger" asp-validation-for="Description"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+        <a asp-action="Index" class="btn btn-primary text-white">Back</a>
+    </form>
+</div>

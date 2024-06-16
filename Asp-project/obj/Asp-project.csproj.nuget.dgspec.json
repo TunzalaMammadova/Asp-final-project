@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tunzale/Desktop/Asp-project/Asp-project/Asp-project.csproj": {}
+    "/Users/tunzale/Desktop/Asp-final-project/Asp-project/Asp-project.csproj": {}
   },
   "projects": {
-    "/Users/tunzale/Desktop/Asp-project/Asp-project/Asp-project.csproj": {
+    "/Users/tunzale/Desktop/Asp-final-project/Asp-project/Asp-project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tunzale/Desktop/Asp-project/Asp-project/Asp-project.csproj",
+        "projectUniqueName": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/Asp-project.csproj",
         "projectName": "Asp-project",
-        "projectPath": "/Users/tunzale/Desktop/Asp-project/Asp-project/Asp-project.csproj",
+        "projectPath": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/Asp-project.csproj",
         "packagesPath": "/Users/tunzale/.nuget/packages/",
-        "outputPath": "/Users/tunzale/Desktop/Asp-project/Asp-project/obj/",
+        "outputPath": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tunzale/.nuget/NuGet/NuGet.Config"

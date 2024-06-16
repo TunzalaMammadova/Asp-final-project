@@ -22,6 +22,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<ISettingService, SettingService>();
 builder.Services.AddScoped<IAdventageService, AdventageService>();
+builder.Services.AddScoped<ISaleService, SaleService>();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 builder.Services.Configure<IdentityOptions>(opt =>

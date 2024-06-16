@@ -1,39 +1,46 @@
 ﻿<Properties StartupConfiguration="{13A18282-C8E9-4A90-9F35-B7A67D9E5B10}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Asp-project/Areas/Admin/Views/Adventage/Edit.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Asp-project/Areas/Admin/Views/Sale/Index.cshtml">
     <Files>
-      <File FileName="Asp-project/Areas/Admin/Views/Adventage/Edit.cshtml" Line="13" Column="6" />
-      <File FileName="Asp-project/Areas/Admin/Controllers/AdventageController.cs" Line="27" Column="1" />
-      <File FileName="Asp-project/Services/Interfaces/IAdventageService.cs" Line="16" Column="1" />
-      <File FileName="Asp-project/Services/AdventageService.cs" Line="49" Column="1" />
-      <File FileName="Asp-project/Areas/Admin/Controllers/SettingController.cs" Line="1" Column="1" />
-      <File FileName="Asp-project/ViewModels/Settings/SettingVM.cs" Line="12" Column="1" />
-      <File FileName="Asp-project/ViewModels/Settings/SettingCreateVM.cs" Line="1" Column="1" />
-      <File FileName="Asp-project/ViewModels/Settings/SettingEditVM.cs" Line="1" Column="1" />
-      <File FileName="Asp-project/Areas/Admin/Controllers/SliderController.cs" Line="1" Column="1" />
+      <File FileName="Asp-project/Services/SaleService.cs" Line="23" Column="1" />
+      <File FileName="Asp-project/Services/Interfaces/ISaleService.cs" Line="16" Column="1" />
+      <File FileName="Asp-project/Areas/Admin/Controllers/SaleController.cs" Line="32" Column="14" />
+      <File FileName="Asp-project/Areas/Admin/Controllers/SliderController.cs" Line="29" Column="45" />
+      <File FileName="Asp-project/Areas/Admin/Views/Sale/Create.cshtml" Line="16" Column="70" />
+      <File FileName="Asp-project/Areas/Admin/Views/Slider/Create.cshtml" Line="5" Column="1" />
+      <File FileName="Asp-project/Areas/Admin/Views/Slider/Detail.cshtml" Line="5" Column="1" />
+      <File FileName="Asp-project/Areas/Admin/Views/Sale/Detail.cshtml" Line="9" Column="44" />
+      <File FileName="Asp-project/Areas/Admin/Views/Slider/Edit.cshtml" Line="5" Column="1" />
+      <File FileName="Asp-project/Areas/Admin/Views/Sale/Edit.cshtml" Line="23" Column="7" />
+      <File FileName="Asp-project/Areas/Admin/Views/Slider/Index.cshtml" Line="23" Column="15" />
+      <File FileName="Asp-project/Areas/Admin/Views/Sale/Index.cshtml" Line="17" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Asp-project">
+          <Node name="Asp-project" expanded="True">
             <Node name="Asp-project">
               <Node name="Areas">
                 <Node name="Admin">
                   <Node name="Controllers" expanded="True" />
-                  <Node name="Views" expanded="True">
-                    <Node name="Adventage" expanded="True">
-                      <Node name="Edit.cshtml" selected="True" />
+                  <Node name="Views">
+                    <Node name="Dashboard" expanded="True" />
+                    <Node name="Sale" expanded="True">
+                      <Node name="Index.cshtml" selected="True" />
                     </Node>
+                    <Node name="Slider" expanded="True" />
                   </Node>
                 </Node>
               </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True">
                 <Node name="Interfaces" expanded="True" />
+              </Node>
+              <Node name="ViewModels" expanded="True">
+                <Node name="Sales" expanded="True" />
+                <Node name="SliderInfos" expanded="True" />
+                <Node name="Sliders" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -41,5 +48,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Asp-project PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
