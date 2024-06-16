@@ -1,0 +1,26 @@
+﻿@namespace Asp_project.ViewModels.Customers
+
+@model CustomerDetailVM
+
+<div class="container mt-5">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Icon</th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.Icon</td>
+                <td>@Model.Title</td>
+                <td>@Model.Desc</td>
+            </tr>
+        </tbody>
+    </table>
+    <a asp-action="Index" class="btn btn-primary text-white">Back</a>
+</div>
+
+
+

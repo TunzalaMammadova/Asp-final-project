@@ -10,19 +10,19 @@ namespace Asp_project.ViewComponents
 {
     public class HeaderViewComponent : ViewComponent
     {
-        private readonly ISettingService _settingService;
+        //private readonly ISettingService _settingService;
         private readonly IHttpContextAccessor _accessor;
 
-        public HeaderViewComponent(ISettingService settingService,
+        public HeaderViewComponent(//ISettingService settingService,
                                    IHttpContextAccessor accessor)
         {
-            _settingService = settingService;
+            //_settingService = settingService;
             _accessor = accessor;
         }
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            Dictionary<string, string> settingDatas = await _settingService.GetAllAsync();
+            //Dictionary<string, string> settingDatas = await _settingService.GetAllAsync();
 
             List<BasketVM> basketProducts = new();
 
@@ -33,7 +33,7 @@ namespace Asp_project.ViewComponents
 
             HeaderVM response = new()
             {
-                Settings = settingDatas,
+                //Settings = settingDatas,
                 BasketCount = basketProducts.Sum(m => m.Count),
                 BasketTotalPrice = basketProducts.Sum(m => m.Count * m.Price)
             };

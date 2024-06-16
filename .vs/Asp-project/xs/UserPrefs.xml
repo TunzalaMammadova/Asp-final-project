@@ -1,23 +1,66 @@
 ﻿<Properties StartupConfiguration="{13A18282-C8E9-4A90-9F35-B7A67D9E5B10}|Default">
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Asp-project/Controllers/MarketingController.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Asp-project/Views/Shared/Components/Header/Default.cshtml">
     <Files>
-      <File FileName="Asp-project/Controllers/MarketingController.cs" Line="33" Column="2" />
-      <File FileName="Asp-project/Controllers/SaleController.cs" Line="30" Column="6" />
-      <File FileName="Asp-project/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Asp-project/Controllers/CustomerController.cs" />
+      <File FileName="Asp-project/Controllers/AdvantageController.cs" />
+      <File FileName="Asp-project/Areas/Admin/Controllers/CustomerController.cs" Line="16" Column="9" />
+      <File FileName="Asp-project/Services/CustomerService.cs" Line="10" Column="2" />
+      <File FileName="Asp-project/Services/Interfaces/ICustomerService.cs" Line="14" Column="66" />
+      <File FileName="Asp-project/Services/Interfaces/IAdventageService.cs" />
+      <File FileName="Asp-project/Services/Interfaces/ICartService.cs" />
+      <File FileName="Asp-project/ViewModels/HomeVM.cs" Line="1" Column="1" />
+      <File FileName="Asp-project/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Asp-project/Controllers/HomeController.cs" />
+      <File FileName="Asp-project/Program.cs" Line="41" Column="1" />
+      <File FileName="Asp-project/Models/Setting.cs" Line="13" Column="1" />
+      <File FileName="Asp-project/Migrations/20240615171528_CreateTableSliders.cs" Line="1" Column="1" />
+      <File FileName="Asp-project/Migrations/AppDbContextModelSnapshot.cs" Line="1" Column="1" />
+      <File FileName="Asp-project/Services/Interfaces/ISaleService.cs" Line="1" Column="1" />
+      <File FileName="Asp-project/ViewComponents/HeaderViewComponent.cs" Line="41" Column="1" />
+      <File FileName="Asp-project/Views/Shared/_Layout.cshtml" Line="35" Column="1" />
+      <File FileName="Asp-project/Views/Shared/Components/Header/Default.cshtml" Line="17" Column="15" />
+      <File FileName="Asp-project/ViewModels/Settings/SettingCreateVM.cs" Line="8" Column="45" />
+      <File FileName="Asp-project/ViewModels/Settings/SettingDetailVM.cs" Line="6" Column="2" />
+      <File FileName="Asp-project/ViewModels/Settings/SettingEditVM.cs" Line="8" Column="45" />
+      <File FileName="Asp-project/ViewModels/Settings/SettingVM.cs" Line="13" Column="1" />
+      <File FileName="Asp-project/Services/Interfaces/ISettingService.cs" Line="17" Column="2" />
+      <File FileName="Asp-project/Services/SettingService.cs" Line="59" Column="117" />
+      <File FileName="Asp-project/Migrations/20240616195747_CreateTableSettings.cs" Line="17" Column="10" />
+      <File FileName="Asp-project/ViewModels/HeaderVM.cs" Line="13" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Asp-project" expanded="True" selected="True" />
+          <Node name="Asp-project" expanded="True">
+            <Node name="Asp-project">
+              <Node name="Areas" expanded="True">
+                <Node name="Admin" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="ViewComponents" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="Components" expanded="True">
+                    <Node name="Header" expanded="True">
+                      <Node name="Default.cshtml" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Asp-project PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Asp-project PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

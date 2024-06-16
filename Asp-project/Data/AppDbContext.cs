@@ -15,6 +15,8 @@ namespace Asp_project.Data
         public DbSet<Adventage> Advantages { get; set; }
         public DbSet<Sale> Sales { get; set; }
         public DbSet<Marketing> Marketings { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -8,6 +8,7 @@ namespace Asp_project;
         public List<Adventage> Adventages { get; set; }
         public List<Sale> Sales { get;  set; }
         public List<Marketing> Marketings { get; set; }
+        public List<Customer> Customers { get; set; }
     }
 
 

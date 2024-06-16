@@ -3,7 +3,6 @@ using System.Reflection.Metadata;
 using Asp_project.Data;
 using Asp_project.Models;
 using Asp_project.Services.Interfaces;
-using Asp_project.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Asp_project.Controllers
@@ -14,17 +13,21 @@ namespace Asp_project.Controllers
         private readonly IAdventageService _adventageService;
         private readonly ISaleService _saleService;
         private readonly IMarketingService _marketingService;
+        private readonly ICustomerService _customerService;
+
 
         public HomeController(AppDbContext context,
                               IAdventageService adventageService,
                               ISaleService saleService,
-                              IMarketingService marketing)
+                              IMarketingService marketing,
+                              ICustomerService customer)
                               
         {
             _context = context;
             _adventageService = adventageService;
             _saleService = saleService;
             _marketingService = marketing;
+            _customerService = customer;
            
         }
 
@@ -33,7 +36,7 @@ namespace Asp_project.Controllers
             List<Adventage> adventages = await _adventageService.GetAllAsync();
             List<Sale> sales = await _saleService.GetAllAsync();
             List<Marketing> marketings = await _marketingService.GetAllAsync();
-
+            List<Customer> customers = await _customerService.GetAllAsync();
 
 
 
@@ -41,7 +44,8 @@ namespace Asp_project.Controllers
             {
                 Adventages = adventages,
                 Sales = sales,
-                Marketings = marketings
+                Marketings = marketings,
+                Customers = customers
             };
 
             return View(model);

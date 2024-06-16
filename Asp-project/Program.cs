@@ -24,6 +24,7 @@ builder.Services.AddScoped<ISettingService, SettingService>();
 builder.Services.AddScoped<IAdventageService, AdventageService>();
 builder.Services.AddScoped<ISaleService, SaleService>();
 builder.Services.AddScoped<IMarketingService, MarketingService>();
+builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 builder.Services.Configure<IdentityOptions>(opt =>

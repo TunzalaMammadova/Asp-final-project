@@ -1,7 +1,6 @@
 ﻿using System;
 using Asp_project.Models;
 using Asp_project.ViewModels.Advantages;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Asp_project.Services.Interfaces
 {
