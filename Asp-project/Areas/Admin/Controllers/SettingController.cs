@@ -10,13 +10,10 @@ namespace Asp_project.Areas.Admin.Controllers
     [Area("Admin")]
     public class SettingController : Controller
     {
-        private readonly AppDbContext _context;
         private readonly ISettingService _settingService;
 
-        public SettingController(AppDbContext context,
-                                ISettingService settingService)
+        public SettingController(ISettingService settingService)
         {
-            _context = context;
             _settingService = settingService;
         }
 

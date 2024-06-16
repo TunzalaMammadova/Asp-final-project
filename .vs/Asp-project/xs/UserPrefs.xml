@@ -1,41 +1,45 @@
 ﻿<Properties StartupConfiguration="{13A18282-C8E9-4A90-9F35-B7A67D9E5B10}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Asp-project/Areas/Admin/Views/Slider/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Asp-project/Areas/Admin/Views/Adventage/Edit.cshtml">
     <Files>
-      <File FileName="Asp-project/Areas/Admin/Views/Advantage/Detail.cshtml" Line="13" Column="7" />
-      <File FileName="Asp-project/Areas/Admin/Controllers/AdvantageController.cs" Line="21" Column="24" />
-      <File FileName="Asp-project/Areas/Admin/Views/Slider/Index.cshtml" Line="17" Column="16" />
+      <File FileName="Asp-project/Areas/Admin/Views/Adventage/Edit.cshtml" Line="13" Column="6" />
+      <File FileName="Asp-project/Areas/Admin/Controllers/AdventageController.cs" Line="27" Column="1" />
+      <File FileName="Asp-project/Services/Interfaces/IAdventageService.cs" Line="16" Column="1" />
+      <File FileName="Asp-project/Services/AdventageService.cs" Line="49" Column="1" />
+      <File FileName="Asp-project/Areas/Admin/Controllers/SettingController.cs" Line="1" Column="1" />
+      <File FileName="Asp-project/ViewModels/Settings/SettingVM.cs" Line="12" Column="1" />
+      <File FileName="Asp-project/ViewModels/Settings/SettingCreateVM.cs" Line="1" Column="1" />
+      <File FileName="Asp-project/ViewModels/Settings/SettingEditVM.cs" Line="1" Column="1" />
       <File FileName="Asp-project/Areas/Admin/Controllers/SliderController.cs" Line="1" Column="1" />
-      <File FileName="Asp-project/Areas/Admin/Controllers/SliderInfoController.cs" Line="1" Column="1" />
-      <File FileName="Asp-project/Areas/Admin/Controllers/SettingController.cs" Line="19" Column="13" />
-      <File FileName="Asp-project/ViewModels/Advantages/AdvantageCreateVM.cs" Line="1" Column="1" />
-      <File FileName="Asp-project/ViewModels/Advantages/AdvantageDetailVM.cs" Line="1" Column="1" />
-      <File FileName="Asp-project/ViewModels/Advantages/AdvantageEditVM.cs" Line="1" Column="1" />
-      <File FileName="Asp-project/ViewModels/Advantages/AdvantageVM.cs" Line="1" Column="1" />
-      <File FileName="Asp-project/Models/Advantage.cs" Line="4" Column="27" />
-      <File FileName="Asp-project/Areas/Admin/Views/Advantage/Create.cshtml" Line="1" Column="1" />
-      <File FileName="Asp-project/Areas/Admin/Views/Advantage/Edit.cshtml" Line="1" Column="1" />
-      <File FileName="Asp-project/Areas/Admin/Views/SliderInfo/Create.cshtml" Line="1" Column="1" />
-      <File FileName="Asp-project/Areas/Admin/Views/SliderInfo/Index.cshtml" Line="6" Column="34" />
-      <File FileName="Asp-project/Areas/Admin/Views/Dashboard/Index.cshtml" Line="1" Column="1" />
-      <File FileName="Asp-project/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Asp-project" expanded="True">
+          <Node name="Asp-project">
             <Node name="Asp-project">
-              <Node name="Data" expanded="True" />
+              <Node name="Areas">
+                <Node name="Admin">
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="Views" expanded="True">
+                    <Node name="Adventage" expanded="True">
+                      <Node name="Edit.cshtml" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Services" expanded="True">
+                <Node name="Interfaces" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.Asp-project PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

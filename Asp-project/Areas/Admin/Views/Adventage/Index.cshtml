@@ -1,6 +1,6 @@
 ﻿@namespace Asp_project.ViewModels.Advantages
 
-@model List<AdvantageVM>
+@model List<AdventageVM>
 
 <div class="container mt-5">
     <div class="create-adventage">
@@ -19,7 +19,7 @@
             @foreach (var item in Model)
              {
                 <tr>
-                    <td><img src="~/img/@item.Icon" style="width: 100px !important; height: 100px !important" /></td>
+                    <td>@item.Icon</td>
                     <td>@item.Title</td>
                     <td>@item.Desc</td>
                     <td>

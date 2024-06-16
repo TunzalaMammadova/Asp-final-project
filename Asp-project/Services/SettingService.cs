@@ -18,7 +18,7 @@ namespace Asp_project.Services
 
         public async Task<Dictionary<string, string>> GetAllAsync()
         {
-            return await _context.Settings.ToDictionaryAsync(m => m.Key, m => m.Value); ;
+            return await _context.Settings.ToDictionaryAsync(m => m.Key, m => m.Value);
         }
 
         public async Task<Setting> GetByIdAsync(int id)
