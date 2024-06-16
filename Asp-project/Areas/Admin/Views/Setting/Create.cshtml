@@ -1,0 +1,20 @@
+﻿@namespace Asp_project.ViewModels.Settings
+
+@model SettingCreateVM
+
+<div class="container mt-5">
+    <form class="form-sample" method="post" asp-action="Create" enctype="multipart/form-data">
+        <div class="form-group">
+            <input asp-for="LogoName" class="form-control" placeholder="Icon" />
+            <span class="text-danger" asp-validation-for="LogoName"></span>
+
+            <input asp-for="Email" type="text" class="form-control" maxlength="50" placeholder="Title" />
+            <span class="text-danger" asp-validation-for="Email"></span>
+
+            <input asp-for="Address" type="text" class="form-control" maxlength="50" placeholder="Description" />
+            <span class="text-danger" asp-validation-for="Address"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+        <a asp-action="Index" class="btn btn-primary text-white">Back</a>
+    </form>
+</div>

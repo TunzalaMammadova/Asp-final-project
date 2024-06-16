@@ -1,17 +1,26 @@
-﻿@*@namespace Asp_project.ViewModels
- 
+﻿@namespace Asp_project.ViewModels.Settings
+
 @model SettingDetailVM
 
-
 <div class="container mt-5">
-    <div class="form-group">
-        <label>Category</label>
-        <input asp-for="Name" type="text" class="form-control" disabled />
-    </div>
-    @if (Model.ProductCount != 0)
-     {
-        <h3>Product count : @Model.ProductCount</h3>
-     }
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Logo</th>
+                <th scope="col">Email</th>
+                <th scope="col">Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.LogoName</td>
+                <td>@Model.Email</td>
+                <td>@Model.Address</td>
+            </tr>
+        </tbody>
+    </table>
     <a asp-action="Index" class="btn btn-primary text-white">Back</a>
-</div>*@
+</div>
+
+
 
