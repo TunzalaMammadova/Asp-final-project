@@ -14,6 +14,7 @@ namespace Asp_project.Data
         public DbSet<SliderInfo> SliderInfos { get; set; }
         public DbSet<Adventage> Advantages { get; set; }
         public DbSet<Sale> Sales { get; set; }
+        public DbSet<Marketing> Marketings { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -8,8 +8,6 @@ namespace Asp_project.Services.Interfaces
 	{
         Task<Sale> GetByIdAsync(int id);
         Task<List<Sale>> GetAllAsync();
-        List<SaleVM> GetMappedDatas(List<Sale> sales);
-        Task<int> GetCountAsync();
     }
 }
 

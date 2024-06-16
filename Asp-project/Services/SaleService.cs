@@ -26,15 +26,6 @@ namespace Asp_project.Services
             return await _context.Sales.Where(m => m.Id == id).FirstOrDefaultAsync();
         }
 
-        public Task<int> GetCountAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<SaleVM> GetMappedDatas(List<Sale> sales)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
 
