@@ -43,6 +43,7 @@ namespace Asp_project.Services
 
         public async Task<List<Category>> GetAllAsync()
         {
+            //return await _context.Categories.Include(m => m.Products).Where(m => !m.SoftDeleted && m.Products.Count != 0).ToListAsync();
             return await _context.Categories.Where(m => !m.SoftDeleted).ToListAsync();
         }
 
@@ -67,6 +68,7 @@ namespace Asp_project.Services
         public async Task<Category> GetWithProductAsync(int id)
         {
             return await _context.Categories.Where(m => m.Id == id)
+                                            //.Include(m => m.Products)
                                             .FirstOrDefaultAsync();
         }
     }
