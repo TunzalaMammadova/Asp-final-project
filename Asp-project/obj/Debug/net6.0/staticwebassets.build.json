@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tZ/IQXrYMtO2tPVp1UI66dgLlP7MtF2Fw2mi41nu0CM=",
+  "Hash": "1WFOEwYZ8bdJElRk+hL//MGQWyYlAo3ooBfhphEKbX0=",
   "Source": "Asp-project",
   "BasePath": "_content/Asp-project",
   "Mode": "Default",
@@ -15060,6 +15060,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/cart-page-header-img.jpg"
+    },
+    {
+      "Identity": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/f2f8c92a-cce5-4366-a508-926a78a30c9a-favicon.png",
+      "SourceId": "Asp-project",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/",
+      "BasePath": "_content/Asp-project",
+      "RelativePath": "img/f2f8c92a-cce5-4366-a508-926a78a30c9a-favicon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/f2f8c92a-cce5-4366-a508-926a78a30c9a-favicon.png"
     },
     {
       "Identity": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/featur-1.jpg",

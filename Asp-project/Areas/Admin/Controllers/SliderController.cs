@@ -43,29 +43,29 @@ namespace Asp_project.Areas.Admin.Controllers
         {
             if (!ModelState.IsValid) return View();
 
-                if (!request.Image.CheckFileType("image/"))
-                {
-                    ModelState.AddModelError("Images", "File must be only image format");
-                    return View();
-                }
+            if (!request.Image.CheckFileType("image/"))
+            {
+                ModelState.AddModelError("Images", "File must be only image format");
+                return View();
+            }
 
-                if (!request.Image.CheckFileSize(800))
-                {
-                    ModelState.AddModelError("Images", "Image size must be max 800kb");
-                }
-            
-                string fileName = Guid.NewGuid().ToString() + "-" + request.Image.FileName;
+            if (!request.Image.CheckFileSize(800))
+            {
+                ModelState.AddModelError("Images", "Image size must be max 800kb");
+            }
 
-                string path = Path.Combine(_env.WebRootPath, "img", fileName);
+            string fileName = Guid.NewGuid().ToString() + "-" + request.Image.FileName;
 
-                ViewBag.fileName = path;
+            string path = Path.Combine(_env.WebRootPath, "img", fileName);
 
-                await request.Image.SaveFileToLocalAsync(path);
+            ViewBag.fileName = path;
 
-                await _context.Sliders.AddAsync(new Slider { Image = fileName , Title = request.Title});
+            await request.Image.SaveFileToLocalAsync(path);
 
-                await _context.SaveChangesAsync();
-            
+            await _context.Sliders.AddAsync(new Slider { Image = fileName, Title = request.Title });
+
+            await _context.SaveChangesAsync();
+
 
             return RedirectToAction("Index");
         }
@@ -103,7 +103,7 @@ namespace Asp_project.Areas.Admin.Controllers
 
             if (slider is null) return NotFound();
 
-            return View(new SliderEditVM { Image = slider.Image , Title = slider.Title });
+            return View(new SliderEditVM { Image = slider.Image, Title = slider.Title });
         }
 
 
@@ -144,7 +144,7 @@ namespace Asp_project.Areas.Admin.Controllers
 
             slider.Image = fileName;
 
-            var datas = new SliderEditVM { Title = slider.Title , Image = slider.Image};
+            var datas = new SliderEditVM { Title = slider.Title, Image = slider.Image };
 
             await _context.SaveChangesAsync();
 
@@ -165,4 +165,3 @@ namespace Asp_project.Areas.Admin.Controllers
         }
     }
 }
-

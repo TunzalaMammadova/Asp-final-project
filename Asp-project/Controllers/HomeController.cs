@@ -14,13 +14,15 @@ namespace Asp_project.Controllers
         private readonly ISaleService _saleService;
         private readonly IMarketingService _marketingService;
         private readonly ICustomerService _customerService;
+        private readonly ICategoryService _categoryService;
 
 
         public HomeController(AppDbContext context,
                               IAdventageService adventageService,
                               ISaleService saleService,
                               IMarketingService marketing,
-                              ICustomerService customer)
+                              ICustomerService customer,
+                              ICategoryService categoryService)
                               
         {
             _context = context;
@@ -28,6 +30,7 @@ namespace Asp_project.Controllers
             _saleService = saleService;
             _marketingService = marketing;
             _customerService = customer;
+            _categoryService = categoryService;
            
         }
 
@@ -37,7 +40,7 @@ namespace Asp_project.Controllers
             List<Sale> sales = await _saleService.GetAllAsync();
             List<Marketing> marketings = await _marketingService.GetAllAsync();
             List<Customer> customers = await _customerService.GetAllAsync();
-
+            List<Category> categories = await _categoryService.GetAllAsync();
 
 
             HomeVM model = new()
@@ -45,7 +48,8 @@ namespace Asp_project.Controllers
                 Adventages = adventages,
                 Sales = sales,
                 Marketings = marketings,
-                Customers = customers
+                Customers = customers,
+                Categories = categories
             };
 
             return View(model);

@@ -1,27 +1,23 @@
-﻿@namespace Asp_project.ViewModels.Settings
+﻿@namespace Asp_project.ViewModels.Category
 
-@model List<SettingVM>
+@model List<CategoryVM>
 
 <div class="container mt-5">
-    <div class="create-adventage">
-        <a asp-area="Admin" asp-controller="Setting" asp-action="Create" class="btn btn-success text-white" style="font-size:30px;width:100px;">+</a>
+    <div class="create-category">
+        <a asp-area="Admin" asp-controller="Category" asp-action="Create" class="btn btn-success text-white" style="font-size:30px;width:100px;">+</a>
     </div>
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">Logo</th>
-                <th scope="col">Email</th>
-                <th scope="col">Address</th>
+                <th scope="col">Category</th>
                 <th scope="col">Operations</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var item in Model)
-             {
+            {
                 <tr>
-                    <td>@item.LogoName</td>
-                    <td>@item.Email</td>
-                    <td>@item.Address</td>
+                    <td>@item.Name</td>
                     <td>
                         <a class="btn btn-info text-white" asp-action="Detail" asp-route-id="@item.Id">Detail</a>
                         <a class="btn btn-warning text-white" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
@@ -30,7 +26,7 @@
                         </form>
                     </td>
                 </tr>
-             }
+            }
         </tbody>
     </table>
 </div>
