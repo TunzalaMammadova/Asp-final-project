@@ -48,4 +48,23 @@
       });
     }
   }
+
+    //Delete image
+
+    $(document).on("click", ".delete-image-btn", function () {
+
+        let id = parseInt($(this).attr("data-image-id"));
+        let ProductId = parseInt($(this).attr("data-product-id"));
+
+        let request = { imageId, ProductId }
+        $.ajax({
+            url: "/admin//product/DeleteProductImage",
+            type: "Post",
+            data: request,
+            success: function (response) {
+
+                $(`[data-image-id = ${imageId}]`).parent().remove();
+            },
+        });
+    })
 })(jQuery);

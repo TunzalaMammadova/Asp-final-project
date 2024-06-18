@@ -130,23 +130,26 @@
     });
 
 
+    //Add basket
 
-    // Product Quantity
-    $('.quantity button').on('click', function () {
-        var button = $(this);
-        var oldValue = button.parent().parent().find('input').val();
-        if (button.hasClass('btn-plus')) {
-            var newVal = parseFloat(oldValue) + 1;
-        } else {
-            if (oldValue > 0) {
-                var newVal = parseFloat(oldValue) - 1;
-            } else {
-                newVal = 0;
-            }
-        }
-        button.parent().parent().find('input').val(newVal);
-    });
 
-})(jQuery);
+    $(document).on("click", ".add-product-basket", function () {
 
+        let id = parseInt($(this).attr("data-id"));
+
+        $.ajax({
+            url: `home/AddProductBasket?id=${id}`,
+            type: "Post",
+            success: function (response) {
+
+                $(".rounded-circle").text(response.count);
+                $(".basket-total-price").text(`CART($${response.total})`);
+            },
+        });
+    })
+
+
+    
+           
+})
 

@@ -43,14 +43,13 @@ namespace Asp_project.Services
 
         public async Task<List<Category>> GetAllAsync()
         {
-            //return await _context.Categories.Include(m => m.Products).Where(m => !m.SoftDeleted && m.Products.Count != 0).ToListAsync();
-            return await _context.Categories.Where(m => !m.SoftDeleted).ToListAsync();
+            return await _context.Categories.Include(m => m.Products).Where(m => !m.SoftDeleted && m.Products.Count != 0).ToListAsync();
         }
 
         public async Task<SelectList> GetAllBySelectAsync()
         {
             var categories = await _context.Categories.ToListAsync();
-            return new SelectList(categories, "id", "name");
+            return new SelectList(categories, "Id", "Name");
         }
 
         public async Task<List<CategoryVM>> GetAllOrderByDescAsync()
@@ -68,7 +67,7 @@ namespace Asp_project.Services
         public async Task<Category> GetWithProductAsync(int id)
         {
             return await _context.Categories.Where(m => m.Id == id)
-                                            //.Include(m => m.Products)
+                                            .Include(m => m.Products)
                                             .FirstOrDefaultAsync();
         }
     }

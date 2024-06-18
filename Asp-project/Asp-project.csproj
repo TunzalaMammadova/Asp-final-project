@@ -47,6 +47,10 @@
     <None Remove="ViewModels\Customers\" />
     <None Remove="Areas\Admin\Views\Category\" />
     <None Remove="ViewModels\Category\" />
+    <None Remove="Areas\Admin\Views\Product\" />
+    <None Remove="ViewModels\Products\" />
+    <None Remove="Views\Product\" />
+    <None Remove="Helpers\Request\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\" />
@@ -96,6 +100,10 @@
     <Folder Include="ViewModels\Customers\" />
     <Folder Include="Areas\Admin\Views\Category\" />
     <Folder Include="ViewModels\Category\" />
+    <Folder Include="Areas\Admin\Views\Product\" />
+    <Folder Include="ViewModels\Products\" />
+    <Folder Include="Views\Product\" />
+    <Folder Include="Helpers\Request\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.31" />

@@ -1,0 +1,31 @@
+﻿@namespace Asp_project.ViewModels.Products
+
+@model ProductCreateVM
+
+<div class="container mt-5">
+    <h3 class="text-center text-success">Create new product</h3>
+    <form class="form-sample mt-3" method="post" asp-action="Create" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>Name</label>
+            <input asp-for="Name" class="form-control"  />
+            <span class="text-danger" asp-validation-for="Name"></span>
+
+            <label>Description</label>
+            <input asp-for="Description" class="form-control"  />
+            <span class="text-danger" asp-validation-for="Description"></span>
+
+            <label>Price</label>
+            <input asp-for="Price"type="number" min="0" class="form-control" />
+            <span class="text-danger" asp-validation-for="Price"></span>
+
+            <label>Category</label>
+            <select class="form-control" asp-for="CategoryId" asp-items="@ViewBag.categories"></select>
+
+            <label>Image</label>
+            <input asp-for="Image" class="form-control" />
+            <span class="text-danger" asp-validation-for="Image"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+        <a asp-action="Index" class="btn btn-primary text-white">Back</a>
+    </form>
+</div>

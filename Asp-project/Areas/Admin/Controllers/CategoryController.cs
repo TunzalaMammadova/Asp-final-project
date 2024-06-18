@@ -54,24 +54,6 @@ namespace Asp_project.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        [HttpGet]
-        public async Task<ActionResult> Detail(int? id)
-        {
-
-            if (id is null) return BadRequest();
-
-            Category category = await _categoryService.GetWithProductAsync((int)id);
-
-            if (category is null) return NotFound();
-
-            CategoryDetailVM model = new()
-            {
-                Name = category.Name,
-                //ProductCount = category.Products.Count()
-            };
-
-            return View(model);
-        }
 
         [HttpPost]
         public async Task<ActionResult> Delete(int? id)
@@ -118,6 +100,26 @@ namespace Asp_project.Areas.Admin.Controllers
 
             await _categoryService.EditAsync(existCategory, category);
             return RedirectToAction(nameof(Index)); ;
+        }
+
+
+        [HttpGet]
+        public async Task<ActionResult> Detail(int? id)
+        {
+
+            if (id is null) return BadRequest();
+
+            Category category = await _categoryService.GetWithProductAsync((int)id);
+
+            if (category is null) return NotFound();
+
+            CategoryDetailVM model = new()
+            {
+                Name = category.Name,
+                ProductCount = category.Products.Count()
+            };
+
+            return View(model);
         }
     }
 }

@@ -1,0 +1,46 @@
+﻿@namespace Asp_project.ViewModels.Products
+
+
+@model ProductEditVM
+
+<div class="container mt-5">
+    <h3 class="text-center text-success">Edit product</h3>
+    <div class="product-images mt-3" style="gap:5px">
+        @foreach (var item in Model.ExistImages)
+         {
+            <div class="product-item" style="position:relative">
+                <img src="~/img/@item.Image" class="@(item.IsMain? "paginate-main-image" : "")" style="width:150px;height:150px" />
+                @if (!item.IsMain)
+                 {
+                    <button class="btn btn-danger btn-sm delete-image-btn" data-image-id="@item.Id" data-product-id="@item.ProductId" style="position:absolute;top:60px; left:45px">Delete</button>
+                 }
+            </div>
+         }
+    </div>
+    <form class="form-sample mt-3" method="post" asp-action="Edit"enctype="multipart/form-data">
+        <div class="form-group">
+            <label>Name</label>
+            <input asp-for="Name" type="text" class="form-control" maxlength="50" />
+            <span class="text-danger" asp-validation-for="Name"></span>
+
+            <label>Description</label>
+            <input asp-for="Description" type="text" class="form-control" maxlength="50" />
+            <span class="text-danger" asp-validation-for="Description"></span>
+
+            <label>Price</label>
+            <input asp-for="Price" type="text" class="form-control" maxlength="50" />
+            <span class="text-danger" asp-validation-for="Price"></span>
+
+            <label>Category</label>
+            <select class="form-control" asp-for="CategoryId" asp-items="@ViewBag.categories"></select>
+        </div>
+
+        <label>Images</label>
+        <input asp-for="NewImages"c lass="form-control"/>
+        <span class="text-danger" asp-validation-for="NewImages"></span>
+
+
+        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+        <a asp-action="Index" class="btn btn-primary text-white">Back</a>
+    </form>
+</div>

@@ -39,6 +39,12 @@
 /*-------------------------------------------------------------------*/
 /* === SCSS Compass Functions === */
 
+
+.paginate-active{
+    background-color:blue !important;
+    color:white!important
+}
+
 @-webkit-keyframes flash {
   0% {
     opacity: 1; }
