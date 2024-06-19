@@ -3481,6 +3481,14 @@
       "PackagePath": "staticwebassets/img/25e18d58-ca05-4c3a-aedc-50a4c99724d9-favicon.png"
     },
     {
+      "Id": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/4070796c-f84f-44d6-9382-f47fc8047449-favicon.png",
+      "PackagePath": "staticwebassets/img/4070796c-f84f-44d6-9382-f47fc8047449-favicon.png"
+    },
+    {
+      "Id": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/4312ea03-e689-4228-9069-7c6296c5be52-apple-watch.jpg",
+      "PackagePath": "staticwebassets/img/4312ea03-e689-4228-9069-7c6296c5be52-apple-watch.jpg"
+    },
+    {
       "Id": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/5ed6d1fb-2404-4d99-8506-1e3b5b31778c-favicon.png",
       "PackagePath": "staticwebassets/img/5ed6d1fb-2404-4d99-8506-1e3b5b31778c-favicon.png"
     },
@@ -3499,6 +3507,10 @@
     {
       "Id": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/834d5e15-8bea-4209-a0a4-e743a88c7f8a-favicon.png",
       "PackagePath": "staticwebassets/img/834d5e15-8bea-4209-a0a4-e743a88c7f8a-favicon.png"
+    },
+    {
+      "Id": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/9c685bc6-20c1-4f4e-8b3f-4935ea3c8bcb-Homepod.png",
+      "PackagePath": "staticwebassets/img/9c685bc6-20c1-4f4e-8b3f-4935ea3c8bcb-Homepod.png"
     },
     {
       "Id": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/a82a593d-8962-4d3e-b47b-d7a743323680-favicon.png",
@@ -3545,8 +3557,20 @@
       "PackagePath": "staticwebassets/img/cart-page-header-img.jpg"
     },
     {
+      "Id": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/ed59d316-f3df-4297-90a5-9dcbf838c7cc-logo-dark.svg",
+      "PackagePath": "staticwebassets/img/ed59d316-f3df-4297-90a5-9dcbf838c7cc-logo-dark.svg"
+    },
+    {
+      "Id": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/f261c128-9bc1-4a18-b70e-24b7d1649c07-headphone.jpeg",
+      "PackagePath": "staticwebassets/img/f261c128-9bc1-4a18-b70e-24b7d1649c07-headphone.jpeg"
+    },
+    {
       "Id": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/f2f8c92a-cce5-4366-a508-926a78a30c9a-favicon.png",
       "PackagePath": "staticwebassets/img/f2f8c92a-cce5-4366-a508-926a78a30c9a-favicon.png"
+    },
+    {
+      "Id": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/f531a445-48e3-4dcc-aa83-3f1d39f658a3-logo-mini.svg",
+      "PackagePath": "staticwebassets/img/f531a445-48e3-4dcc-aa83-3f1d39f658a3-logo-mini.svg"
     },
     {
       "Id": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/featur-1.jpg",

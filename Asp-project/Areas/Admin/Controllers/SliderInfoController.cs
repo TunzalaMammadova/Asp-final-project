@@ -116,38 +116,42 @@ namespace Asp_project.Areas.Admin.Controllers
 
             if (sliderInfo is null) return NotFound();
 
-            if (request.NewImage is not null) return RedirectToAction(nameof(Index));
-
-            if (request.NewImage.CheckFileType("image/"))
+            if (request.NewImage is not null)
             {
-                ModelState.AddModelError("NewImage", "File must be only image format");
-                return View(request);
+
+                if (!request.NewImage.CheckFileType("image/"))
+                {
+                    ModelState.AddModelError("NewImage", "File must be only image format");
+                    request.Image = sliderInfo.Background;
+                    return View(request);
+                };
+
+                if (!request.NewImage.CheckFileSize(500))
+                {
+                    ModelState.AddModelError("NewImage", "Image size must be max 500kb");
+                    request.Image = sliderInfo.Background;
+                    return View(request);
+                }
+
+                string oldPath = Path.Combine(_env.WebRootPath, "img", sliderInfo.Background);
+
+                oldPath.DeleteFileFromToLocal();
+
+                string fileName = Guid.NewGuid().ToString() + "-" + request.NewImage.FileName;
+
+                string newPath = Path.Combine(_env.WebRootPath, "img", fileName);
+
+                await request.NewImage.SaveFileToLocalAsync(newPath);
+
+                sliderInfo.Background = fileName;
             }
 
-            if (request.NewImage.CheckFileSize(800))
-            {
-                ModelState.AddModelError("NewImage", "Image size must be max 800kb");
-                request.Image = sliderInfo.Background;
-                return View(request);
-            }
-
-            string oldPath = Path.Combine(_env.WebRootPath, "img", sliderInfo.Background);
-
-            oldPath.DeleteFileFromToLocal();
-
-            string fileName = Guid.NewGuid().ToString() + "-" + request.NewImage.FileName;
-
-            string newPath = Path.Combine(_env.WebRootPath, "img", fileName);
-
-            await request.NewImage.SaveFileToLocalAsync(newPath);
-
-            sliderInfo.Background = fileName;
-
-            var datas = new SliderInfoEditVM { Title = sliderInfo.Title, Image = sliderInfo.Background };
+            sliderInfo.Title = request.Title;
+            sliderInfo.Description = request.Description;
 
             await _context.SaveChangesAsync();
 
-            return View(datas);
+            return RedirectToAction(nameof(Index));
         }
 
 

@@ -11,7 +11,7 @@ namespace Asp_project.Services.Interfaces
         Task<Product> GetByIdAsync(int id);
         Task<List<Product>> GetAllAsync();
         List<ProductVM> GetMappedDatas(List<Product> products);
-        Task<List<Product>> GetAllPaginateAsync(int page, int take = 4);
+        Task<List<Product>> GetAllPaginateAsync(int page, int take = 3);
         Task<int> GetCountAsync();
         Task CreateAsync(Product product);
         Task DeleteAsync(Product product);

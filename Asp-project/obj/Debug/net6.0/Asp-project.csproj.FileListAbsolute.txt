@@ -282,3 +282,4 @@
 /Users/tunzale/Desktop/Asp-final-project/Asp-project/obj/Debug/net6.0/Asp-project.pdb
 /Users/tunzale/Desktop/Asp-final-project/Asp-project/obj/Debug/net6.0/Asp-project.genruntimeconfig.cache
 /Users/tunzale/Desktop/Asp-final-project/Asp-project/obj/Debug/net6.0/ref/Asp-project.dll
+/Users/tunzale/Desktop/Asp-final-project/Asp-project/bin/Debug/net6.0/Newtonsoft.Json.dll

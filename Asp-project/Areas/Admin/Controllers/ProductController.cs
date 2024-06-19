@@ -33,7 +33,7 @@ namespace Asp_project.Areas.Admin.Controllers
             var paginateDatas = await _productService.GetAllPaginateAsync(page);
             var mappedDatas = _productService.GetMappedDatas(paginateDatas);
 
-            int pageCount = await GetPageCountAsync(4);
+            int pageCount = await GetPageCountAsync(3);
             Paginate<ProductVM> model = new(mappedDatas, page, pageCount);
 
             return View(model);
@@ -118,6 +118,7 @@ namespace Asp_project.Areas.Admin.Controllers
             ViewBag.categories = await _categoryService.GetAllBySelectAsync();
 
             if (id is null) return BadRequest();
+            if (!ModelState.IsValid) return BadRequest();
 
             Product product = await _productService.GetByIdAsync((int)id);
 
@@ -148,25 +149,15 @@ namespace Asp_project.Areas.Admin.Controllers
         {
             ViewBag.categories = await _categoryService.GetAllBySelectAsync();
 
+            if (!ModelState.IsValid) return View();   
+
             if (id is null) return BadRequest();
 
             Product product = await _productService.GetByIdAsync((int)id);
 
             if (product is null) return NotFound();
 
-            if (!ModelState.IsValid)
-            {
-                request.ExistImages = product.ProductImage.Select(m => new ProductEditImageVM
-                {
-                    Id = m.Id,
-                    ProductId = m.ProductId,
-                    Image = m.Name,
-                    IsMain = m.IsMain
-                }).ToList();
-
-
-                return View(request);
-            }
+            List<ProductImage> images = product.ProductImage.ToList();
 
             if (request.NewImages is not null)
             {
@@ -199,14 +190,12 @@ namespace Asp_project.Areas.Admin.Controllers
                         ModelState.AddModelError("NewImages", "File must be only image format");
                         return View(request);
                     }
-
                 }
             }
 
             await _productService.EditAsync(product, request);
-
             return RedirectToAction(nameof(Index));
-        }
+            }
 
 
         [HttpGet]
@@ -259,6 +248,7 @@ namespace Asp_project.Areas.Admin.Controllers
                 });
             }
 
+            images.FirstOrDefault().IsMain = true;
 
             Product product = new()
             {

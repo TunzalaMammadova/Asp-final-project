@@ -13,5 +13,6 @@ public class HomeVM
     public List<Category> Categories { get; set; }
     public List<Product> Products { get; set; }
     public List<ProductImage> ProductImage { get; set; }
+    public List<Setting> Settings { get; set; }
 }
 

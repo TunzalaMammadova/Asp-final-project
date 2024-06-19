@@ -6,6 +6,7 @@ using Asp_project.Models;
 using Asp_project.Services.Interfaces;
 using Asp_project.ViewModels.Products;
 using Microsoft.EntityFrameworkCore;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Asp_project.Services
 {
@@ -42,6 +43,17 @@ namespace Asp_project.Services
                                           .FirstOrDefaultAsync(m => m.Id == id);
         }
 
+        public async Task<List<Product>> GetAllPaginateAsync(int page, int take = 3)
+        {
+            return await _context.Products.Where(m=>!m.SoftDeleted)
+                                          .Include(m => m.Category)
+                                          .Include(m => m.ProductImage)
+                                          .Skip((page - 1) * take)
+                                          .Take(take)
+                                          .ToListAsync();
+        }
+
+
         public List<ProductVM> GetMappedDatas(List<Product> products)
         {
             return products.Select(m => new ProductVM
@@ -56,14 +68,6 @@ namespace Asp_project.Services
             }).ToList();
         }
 
-        public async Task<List<Product>> GetAllPaginateAsync(int page, int take = 4)
-        {
-            return await _context.Products.Include(m => m.Category)
-                                          .Include(m => m.ProductImage)
-                                          .Skip((page - 1) * take)
-                                          .Take(take)
-                                          .ToListAsync();
-        }
 
         public async Task<int> GetCountAsync()
         {
@@ -73,8 +77,8 @@ namespace Asp_project.Services
         public async Task DeleteProductImageAsync(DeleteProductImageRequest request)
         {
             var product = await _context.Products.Where(m => m.Id == request.ProductId)
-                                        .Include(m => m.ProductImage)
-                                        .FirstOrDefaultAsync();
+                                                 .Include(m => m.ProductImage)
+                                                 .FirstOrDefaultAsync();
 
             var image = product.ProductImage.FirstOrDefault(m => m.Id == request.ImageId);
 
@@ -87,26 +91,38 @@ namespace Asp_project.Services
             await _context.SaveChangesAsync();
         }
 
+        
         public async Task EditAsync(Product product, ProductEditVM edited)
         {
-            if (edited.NewImages != null)
+            List<ProductImage> images = product.ProductImage.ToList();
+
+            if (edited.NewImages  is not null)
             {
                 foreach (var item in edited.NewImages)
                 {
                     string fileName = Guid.NewGuid().ToString() + "-" + item.FileName;
 
-                    string path = _env.GenerateFilePath("img", fileName);
+                    string newPath = Path.Combine(_env.WebRootPath, "img", fileName);
 
-                    await item.SaveFileToLocalAsync(path);
+                    await item.SaveFileToLocalAsync(newPath);
                     product.ProductImage.Add(new ProductImage { Name = fileName });
+
+                    ProductImage image = new()
+                    {
+                        Name = fileName
+                    };
+
+                    images.Add(image);
 
                 }
             }
 
+            product.ProductImage = images;
             product.Name = edited.Name;
             product.Description = edited.Description;
             product.CategoryId = edited.CategoryId;
             product.Price = decimal.Parse(edited.Price.Replace(",", "."));
+            
             await _context.SaveChangesAsync();
 
         }

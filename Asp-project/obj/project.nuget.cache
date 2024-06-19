@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+S0khBMxTHqlchEc77y/Q7brjGshEJ9qlXzpm4wiWH7HwcsmJxZR7clFu0SzA3mpN0eHMuG9HldLHunH2SP1OQ==",
+  "dgSpecHash": "QrKx5RYKK7208x7cOzoMVb7nshAKJbOWRu2hU8CZ+JbRavAiczOCsR2qjooS62XkQxVi/tvN53g+f8U8FxefZA==",
   "success": true,
   "projectFilePath": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/Asp-project.csproj",
   "expectedPackageFiles": [
@@ -38,6 +38,7 @@
     "/Users/tunzale/.nuget/packages/microsoft.netcore.platforms/3.1.0/microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "/Users/tunzale/.nuget/packages/microsoft.win32.registry/4.7.0/microsoft.win32.registry.4.7.0.nupkg.sha512",
     "/Users/tunzale/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "/Users/tunzale/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/tunzale/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
     "/Users/tunzale/.nuget/packages/system.configuration.configurationmanager/4.7.0/system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "/Users/tunzale/.nuget/packages/system.diagnostics.diagnosticsource/6.0.1/system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
