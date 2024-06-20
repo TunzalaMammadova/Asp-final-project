@@ -240,6 +240,7 @@
 /Users/tunzale/Desktop/Asp-final-project/Asp-project/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/tunzale/Desktop/Asp-final-project/Asp-project/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
 /Users/tunzale/Desktop/Asp-final-project/Asp-project/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/Users/tunzale/Desktop/Asp-final-project/Asp-project/bin/Debug/net6.0/Newtonsoft.Json.dll
 /Users/tunzale/Desktop/Asp-final-project/Asp-project/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
 /Users/tunzale/Desktop/Asp-final-project/Asp-project/bin/Debug/net6.0/System.Diagnostics.DiagnosticSource.dll
 /Users/tunzale/Desktop/Asp-final-project/Asp-project/bin/Debug/net6.0/System.Drawing.Common.dll
@@ -282,4 +283,3 @@
 /Users/tunzale/Desktop/Asp-final-project/Asp-project/obj/Debug/net6.0/Asp-project.pdb
 /Users/tunzale/Desktop/Asp-final-project/Asp-project/obj/Debug/net6.0/Asp-project.genruntimeconfig.cache
 /Users/tunzale/Desktop/Asp-final-project/Asp-project/obj/Debug/net6.0/ref/Asp-project.dll
-/Users/tunzale/Desktop/Asp-final-project/Asp-project/bin/Debug/net6.0/Newtonsoft.Json.dll

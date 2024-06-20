@@ -71,8 +71,8 @@ namespace Asp_project.Controllers
         }
 
 
-
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddProductBasket(int? id)
         {
 
@@ -90,7 +90,7 @@ namespace Asp_project.Controllers
                 basketProducts = new List<BasketVM>();
             }
 
-            var dbProduct = await _context.Products.FirstOrDefaultAsync(m => m.Id == (int)id);
+            var dboProduct = await _context.Products.FirstOrDefaultAsync(m => m.Id == (int)id);
 
             var existProduct = basketProducts.FirstOrDefault(m => m.Id == (int)id);
 
@@ -104,7 +104,7 @@ namespace Asp_project.Controllers
                 {
                     Id = (int)id,
                     Count = 1,
-                    Price = dbProduct.Price
+                    Price = dboProduct.Price
                 });
             }
 
@@ -113,7 +113,7 @@ namespace Asp_project.Controllers
             int count = basketProducts.Sum(m => m.Count);
             decimal total = basketProducts.Sum(m => m.Count * m.Price);
 
-            return Ok(new { count, total });
+            return Ok(new { count });
 
         }
     }

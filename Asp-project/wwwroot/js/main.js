@@ -143,7 +143,7 @@
             success: function (response) {
 
                 $(".rounded-circle").text(response.count);
-                $(".basket-total-price").text(`CART($${response.total})`);
+                $(".basket-total-price").text(`${response.total}`);
             },
         });
     })

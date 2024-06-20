@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "T5RCpOjkU8G8tOKZzq9U26p+9sIpujHz8I7dmUv/Szo=",
+  "Hash": "jM4zNIwj9r1MvMuk9GVMN/Mfw8nUtgyrLUDDx4TnFb4=",
   "Source": "Asp-project",
   "BasePath": "_content/Asp-project",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/.DS_Store",
+      "SourceId": "Asp-project",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/",
+      "BasePath": "_content/Asp-project",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
     {
       "Identity": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/admin/css/style.css",
       "SourceId": "Asp-project",
@@ -14788,6 +14805,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/18eb7b53-e97c-45d7-af57-48644fb238aa-favicon.png"
+    },
+    {
+      "Identity": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/2-2-2-3foodgroups_fruits_detailfeature.jpg",
+      "SourceId": "Asp-project",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/",
+      "BasePath": "_content/Asp-project",
+      "RelativePath": "img/2-2-2-3foodgroups_fruits_detailfeature.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/2-2-2-3foodgroups_fruits_detailfeature.jpg"
     },
     {
       "Identity": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/25e18d58-ca05-4c3a-aedc-50a4c99724d9-favicon.png",

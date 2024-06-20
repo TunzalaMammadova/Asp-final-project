@@ -1,81 +1,27 @@
 ﻿<Properties StartupConfiguration="{13A18282-C8E9-4A90-9F35-B7A67D9E5B10}|Default">
-  <MonoDevelop.Ide.ItemProperties.Asp-project PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Asp-project/Views/Home/Index.cshtml">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Asp-project/Program.cs">
     <Files>
-      <File FileName="Asp-project/Services/ProductService.cs" />
-      <File FileName="Asp-project/Areas/Admin/Controllers/ProductController.cs" />
-      <File FileName="Asp-project/Areas/Admin/Views/Product/Edit.cshtml" />
-      <File FileName="Asp-project/Areas/Admin/Views/Product/Index.cshtml" />
-      <File FileName="Asp-project/Models/BaseEntity.cs" />
-      <File FileName="Asp-project/Views/Home/Index.cshtml" Line="433" Column="25" />
-      <File FileName="Asp-project/Controllers/HomeController.cs" Line="68" Column="15" />
-      <File FileName="Asp-project/Services/Interfaces/IProductService.cs" />
-      <File FileName="Asp-project/Views/Cart/Index.cshtml" Line="141" Column="29" />
-      <File FileName="Asp-project/Models/Category.cs" />
-      <File FileName="Asp-project/Areas/Admin/Views/Category/Create.cshtml" />
-      <File FileName="Asp-project/Areas/Admin/Views/Category/Detail.cshtml" Line="15" Column="7" />
-      <File FileName="Asp-project/Areas/Admin/Views/Category/Edit.cshtml" />
-      <File FileName="Asp-project/Areas/Admin/Views/Category/Index.cshtml" Line="1" Column="1" />
-      <File FileName="Asp-project/ViewModels/Products/ProductCreateVM.cs" />
-      <File FileName="Asp-project/ViewModels/Category/CategoryCreateVM.cs" />
-      <File FileName="Asp-project/ViewModels/Category/CategoryDetailVM.cs" />
-      <File FileName="Asp-project/ViewModels/Category/CategoryEditVM.cs" />
-      <File FileName="Asp-project/ViewModels/Category/CategoryVM.cs" />
-      <File FileName="Asp-project/Areas/Admin/Controllers/CategoryController.cs" />
-      <File FileName="Asp-project/Areas/Admin/Controllers/CustomerController.cs" />
-      <File FileName="Asp-project/Controllers/CartController.cs" Line="80" Column="1" />
-      <File FileName="Asp-project/ViewModels/Baskets/BasketVM.cs" Line="1" Column="1" />
-      <File FileName="Asp-project/ViewModels/Baskets/CartVM.cs" Line="11" Column="1" />
-      <File FileName="Asp-project/ViewModels/Baskets/BasketProductsVM.cs" Line="9" Column="29" />
-      <File FileName="Asp-project/ViewModels/HeaderVM.cs" Line="16" Column="1" />
-      <File FileName="Asp-project/ViewComponents/HeaderViewComponent.cs" Line="45" Column="1" />
-      <File FileName="Asp-project/Controllers/MarketingController.cs" Line="1" Column="1" />
-      <File FileName="Asp-project/Controllers/CustomerController.cs" Line="1" Column="1" />
-      <File FileName="Asp-project/Controllers/CategoryController.cs" Line="1" Column="1" />
-      <File FileName="Asp-project/Areas/Admin/Controllers/SettingController.cs" Line="115" Column="1" />
-      <File FileName="Asp-project/ViewModels/HomeVM.cs" Line="19" Column="1" />
-      <File FileName="Asp-project/Views/Shared/_Layout.cshtml" Line="111" Column="58" />
-      <File FileName="Asp-project/Views/Shared/Components/Header/Default.cshtml" Line="51" Column="140" />
-      <File FileName="Asp-project/Data/AppDbContext.cs" Line="25" Column="11" />
-      <File FileName="Asp-project/Views/Shared/Components/Slider/Default.cshtml" Line="1" Column="1" />
+      <File FileName="Asp-project/Controllers/AccountController.cs" Line="92" Column="18" />
+      <File FileName="Asp-project/Program.cs" Line="28" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Asp-project" expanded="True" selected="True">
+          <Node name="Asp-project" expanded="True">
             <Node name="Asp-project">
-              <Node name="Areas" expanded="True">
-                <Node name="Admin" expanded="True">
-                  <Node name="Controllers" expanded="True" />
-                  <Node name="Views" expanded="True">
-                    <Node name="Category" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
               <Node name="Controllers" expanded="True" />
-              <Node name="ViewComponents" expanded="True" />
-              <Node name="ViewModels" expanded="True">
-                <Node name="Baskets" expanded="True" />
-              </Node>
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="Components" expanded="True">
-                    <Node name="Header" expanded="True" />
-                    <Node name="Slider" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Asp-project PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
       "Id": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/admin/css/style.css",
       "PackagePath": "staticwebassets/admin/css/style.css"
     },
@@ -3475,6 +3479,10 @@
     {
       "Id": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/18eb7b53-e97c-45d7-af57-48644fb238aa-favicon.png",
       "PackagePath": "staticwebassets/img/18eb7b53-e97c-45d7-af57-48644fb238aa-favicon.png"
+    },
+    {
+      "Id": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/2-2-2-3foodgroups_fruits_detailfeature.jpg",
+      "PackagePath": "staticwebassets/img/2-2-2-3foodgroups_fruits_detailfeature.jpg"
     },
     {
       "Id": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/25e18d58-ca05-4c3a-aedc-50a4c99724d9-favicon.png",

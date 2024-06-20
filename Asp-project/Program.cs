@@ -36,17 +36,22 @@ builder.Services.Configure<IdentityOptions>(opt =>
     opt.Password.RequireNonAlphanumeric = true;
     opt.Password.RequireLowercase = true;
     opt.Password.RequireUppercase = true;
+
+    opt.User.RequireUniqueEmail = true;
 });
 
 
 var app = builder.Build();
 
-app.UseAuthorization();
-app.MapRazorPages();
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+
+app.UseAuthentication();
+
+app.UseAuthorization();
+app.MapRazorPages();
+
 
 app.MapControllerRoute(
     name: "areas",
