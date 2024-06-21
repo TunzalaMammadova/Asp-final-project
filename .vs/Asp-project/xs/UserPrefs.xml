@@ -1,27 +1,29 @@
 ﻿<Properties StartupConfiguration="{13A18282-C8E9-4A90-9F35-B7A67D9E5B10}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Asp-project/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.Asp-project PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Asp-project/Controllers/CartController.cs">
     <Files>
-      <File FileName="Asp-project/Controllers/AccountController.cs" Line="92" Column="18" />
-      <File FileName="Asp-project/Program.cs" Line="28" Column="15" />
+      <File FileName="Asp-project/Views/Account/SignIn.cshtml" Line="44" Column="31" />
+      <File FileName="Asp-project/Views/Account/SignUp.cshtml" Line="63" Column="1" />
+      <File FileName="Asp-project/Controllers/AccountController.cs" Line="60" Column="44" />
+      <File FileName="Asp-project/ViewModels/Accounts/LoginVM.cs" Line="17" Column="1" />
+      <File FileName="Asp-project/ViewModels/Accounts/RegisterVM.cs" Line="1" Column="1" />
+      <File FileName="Asp-project/Controllers/CartController.cs" Line="85" Column="26" />
+      <File FileName="Asp-project/ViewModels/Baskets/BasketProductsVM.cs" Line="1" Column="1" />
+      <File FileName="Asp-project/Views/Shared/Components/Header/Default.cshtml" Line="43" Column="25" />
+      <File FileName="Asp-project/Views/Cart/Index.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Asp-project" expanded="True">
-            <Node name="Asp-project">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Program.cs" selected="True" />
-            </Node>
-          </Node>
+          <Node name="Asp-project" expanded="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Asp-project PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

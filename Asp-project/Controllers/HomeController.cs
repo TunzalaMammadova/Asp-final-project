@@ -72,7 +72,6 @@ namespace Asp_project.Controllers
 
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddProductBasket(int? id)
         {
 

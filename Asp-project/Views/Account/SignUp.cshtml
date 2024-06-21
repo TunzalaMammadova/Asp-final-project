@@ -7,36 +7,44 @@
     <div class="mask d-flex align-items-center h-100 gradient-custom-3">
         <div class="container h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                
                 <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                     <div class="card" style="border-radius: 15px;">
                         <div class="card-body p-5">
                             <h2 class="text-uppercase text-center mb-5">Create an account</h2>
-                            <form method="post" asp-action="SignUp">
+                            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                            <form method="post" asp-controller="Account" asp-action="SignUp">
 
                                 <div data-mdb-input-init class="form-outline mb-4">
                                     <label class="form-label" for="form3Example3cg">Username</label>
                                     <input asp-for="Username" autocomplete="off" class="form-control" id="inputAddress">
+                                    <span class="text-danger" asp-validation-for="Username"></span>
                                 </div>
 
                                 <div data-mdb-input-init class="form-outline mb-4">
                                     <label class="form-label" for="form3Example3cg">FullName</label>
                                     <input asp-for="FullName" autocomplete="off" class="form-control" id="inputAddress">
+                                    <span class="text-danger" asp-validation-for="FullName"></span>
+
                                 </div>
+
 
                                 <div data-mdb-input-init class="form-outline mb-4">
                                     <label class="form-label" for="form3Example4cg">Email</label>
                                     <input asp-for="Email" autocomplete="off" class="form-control" id="inputAddress">
+                                    <span class="text-danger" asp-validation-for="Email"></span>
                                 </div>
 
                                 <div data-mdb-input-init class="form-outline mb-4">
                                     <label class="form-label" for="form3Example4cdg">Password</label>
                                     <input asp-for="Password" autocomplete="off" class="form-control" id="inputAddress">
+                                    <span class="text-danger" asp-validation-for="Password"></span>
                                 </div>
 
                                 <div data-mdb-input-init class="form-outline mb-4">
                                     <label class="form-label" for="form3Example4cdg">ConfirmPassword</label>
                                     <input asp-for="ConfirmPassword" autocomplete="off" class="form-control" id="inputAddress">
+                                    <span class="text-danger" asp-validation-for="ConfirmPassword"></span>
                                 </div>
 
                                 <div class="form-check d-flex justify-content-center mb-5">
@@ -48,14 +56,13 @@
 
                                 <div class="d-flex justify-content-center">
                                     <button type="submit" data-mdb-button-init
-                                            data-mdb-ripple-init class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"style="color:white!important">
+                                            data-mdb-ripple-init class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" style="color:white!important">
                                         Register
                                     </button>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary" style="color:white">Login here</button>
+                                <button type="submit" class="btn btn-primary" asp-controller="Account" asp-action="SignIn" style="color:white">Login here</button>
                             </form>
-
                         </div>
                     </div>
                 </div>

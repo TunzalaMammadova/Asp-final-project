@@ -12,7 +12,6 @@ public class CartController : Controller
 
     public CartController(AppDbContext context,
            IHttpContextAccessor accessor)
-
     {
         _context = context;
         _accessor = accessor;

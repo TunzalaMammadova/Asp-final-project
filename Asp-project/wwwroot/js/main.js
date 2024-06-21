@@ -1,4 +1,4 @@
-(function ($) {
+$(function () {
     "use strict";
 
     // Spinner
@@ -133,16 +133,16 @@
     //Add basket
 
 
-    $(document).on("click", ".add-product-basket", function () {
-
+    $(document).on('click', '.add-product-basket', function (e) {
+        e.preventDefault();
         let id = parseInt($(this).attr("data-id"));
-
+        console.log(id);
         $.ajax({
             url: `home/AddProductBasket?id=${id}`,
-            type: "Post",
+            type: "POST",
             success: function (response) {
 
-                $(".rounded-circle").text(response.count);
+                $(".basket-count").text(response.count);
                 $(".basket-total-price").text(`${response.total}`);
             },
         });

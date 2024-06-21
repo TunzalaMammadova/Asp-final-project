@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using Asp_project.Models;
 using Asp_project.ViewModels.Accounts;
 using Microsoft.AspNetCore.Identity;
@@ -25,6 +26,8 @@ namespace Asp_project.Controllers
         {
             return View();
         }
+
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -54,8 +57,10 @@ namespace Asp_project.Controllers
                 return View();
             }
 
-            return RedirectToAction("SignIn","Account");
+            return RedirectToAction("SignIn", "Account");
         }
+
+
 
         [HttpGet]
         public async Task<IActionResult> SignIn()
