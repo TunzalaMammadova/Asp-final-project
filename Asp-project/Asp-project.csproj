@@ -54,6 +54,7 @@
     <None Remove="Views\Account\" />
     <None Remove="ViewModels\Accounts\" />
     <None Remove="Views\Shop\" />
+    <None Remove="ViewModels\Shop\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\" />
@@ -110,6 +111,7 @@
     <Folder Include="Views\Account\" />
     <Folder Include="ViewModels\Accounts\" />
     <Folder Include="Views\Shop\" />
+    <Folder Include="ViewModels\Shop\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.31" />

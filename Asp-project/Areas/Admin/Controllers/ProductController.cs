@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Asp_project.Areas.Admin.Controllers
 {
-    
     [Area("Admin")]
     public class ProductController : Controller
     {
@@ -149,7 +148,7 @@ namespace Asp_project.Areas.Admin.Controllers
         {
             ViewBag.categories = await _categoryService.GetAllBySelectAsync();
 
-            if (!ModelState.IsValid) return View();   
+            if (!ModelState.IsValid) return View();
 
             if (id is null) return BadRequest();
 
@@ -195,11 +194,10 @@ namespace Asp_project.Areas.Admin.Controllers
 
             await _productService.EditAsync(product, request);
             return RedirectToAction(nameof(Index));
-            }
-
+        }
+    
 
         [HttpGet]
-        
         public async Task<IActionResult> Create()
         {
             ViewBag.categories = await _categoryService.GetAllBySelectAsync();
@@ -258,7 +256,6 @@ namespace Asp_project.Areas.Admin.Controllers
                 CategoryId = request.CategoryId,
                 ProductImage = images
             };
-
 
             await _productService.CreateAsync(product);
             return RedirectToAction(nameof(Index));

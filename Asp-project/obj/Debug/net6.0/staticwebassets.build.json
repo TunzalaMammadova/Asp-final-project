@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jM4zNIwj9r1MvMuk9GVMN/Mfw8nUtgyrLUDDx4TnFb4=",
+  "Hash": "CGp7pq27KIcF0EvxLHJpKq1SjDlwlD1cJS+gvGob+Dk=",
   "Source": "Asp-project",
   "BasePath": "_content/Asp-project",
   "Mode": "Default",
@@ -15162,6 +15162,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/cart-page-header-img.jpg"
+    },
+    {
+      "Identity": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/d578cfde-8c0e-4aa5-8ba2-4fc5fec80306-headphone.jpeg",
+      "SourceId": "Asp-project",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/",
+      "BasePath": "_content/Asp-project",
+      "RelativePath": "img/d578cfde-8c0e-4aa5-8ba2-4fc5fec80306-headphone.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/d578cfde-8c0e-4aa5-8ba2-4fc5fec80306-headphone.jpeg"
     },
     {
       "Identity": "/Users/tunzale/Desktop/Asp-final-project/Asp-project/wwwroot/img/ed59d316-f3df-4297-90a5-9dcbf838c7cc-logo-dark.svg",
